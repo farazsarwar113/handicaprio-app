@@ -23,11 +23,16 @@
 
               </form>
               <br>
-              <p>Tokens: </p>
-              <p class="text-wrap">{{vm.tokens}}</p>
-              <br>
-              <p>Parts of Speach Tagging:
-              <p class="text-wrap"> {{vm.pos}} </p>
+              <p ng-show="vm.tokens">Tokens: </p>
+              <p ng-show="vm.tokens" class="text-wrap">{{vm.tokens}}</p>
+              <br ng-show="vm.pos">
+              <p ng-show="vm.pos">Parts of Speach Tagging:
+              <p ng-show="vm.pos" class="text-wrap"> {{vm.pos}} </p>
+
+              <div ng-show="vm.warnings" style="border: 1px solid yellow"> 
+                <p class="text-wrap" style ="padding: 8px;"><span style="font-size: 14px; color: orange"><strong>Warning!</strong></span></p>
+                <p ng-repeat="warning in vm.warnings" style="font-size: 13px; padding: 8px;">{{warning.reason}}</p>
+              </div>
 
             </div>
             <div ng-if="vm.showVideo == true">
