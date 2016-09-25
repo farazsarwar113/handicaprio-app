@@ -1,0 +1,37 @@
+<ion-view>
+   <ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-positive" align-title="center">
+        <ion-nav-buttons side="left">
+          <button 
+             class="button button-icon button-clear ion-navicon dark-text" menu-toggle="left">
+          </button>
+
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right" >
+          </ion-nav-buttons>
+        </ion-nav-bar>
+        
+        <ion-tabs class="tabs-stable tabs-icon-top " id="tabsController-tabs1">
+            <ion-tab title="Home" icon-on="ion-ios-home" icon-off="ion-ios-home-outline" nav-direction="swap" ng-click="vm.goToPage($event, 'tabs.home')">
+                <ion-nav-view name="home-view"></ion-nav-view>
+            </ion-tab>
+            <ion-tab title="Translator" icon-on="ion-ios-monitor" icon-off="ion-ios-monitor-outline" nav-direction="swap" ng-click="vm.goToPage($event, 'tabs.translator')">
+                <ion-nav-view name="translator-view"></ion-nav-view>
+            </ion-tab>
+            <ion-tab title="Academy" icon-on="ion-ios-book" icon-off="ion-ios-book-outline" nav-direction="swap"  ng-click="vm.goToPage($event, 'tabs.academy')">
+                <ion-nav-view name="academy-view"></ion-nav-view>
+            </ion-tab>
+            <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" nav-direction="swap"  ng-click="vm.goToPage($event, 'tabs.settings')">
+                <ion-nav-view name="settings-view"></ion-nav-view>
+            </ion-tab>
+        </ion-tabs>
+        
+    </ion-side-menu-content>
+       
+    <ion-side-menu side="left">
+        <div ui-view="side-menu"></div>
+    </ion-side-menu>    
+       
+    </ion-side-menus>
+</ion-view>

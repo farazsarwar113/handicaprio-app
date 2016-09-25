@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="stylesheet" href="fonts/lato/css/fonts.css">
+    
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet">
+    <link href="lib/intro.js/introjs.css" rel="stylesheet">
+    
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+      
+            <ion-nav-view></ion-nav-view>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/ionic.headerShrink.js"></script>
+    <script src="lib/lodash/lodash.js"></script>
+    <script src="lib/restangular/dist/restangular.js"></script>
+    
+    <script src="js/app.js"></script>
+    <script src="js/dataService.factory.js"></script>
+   
+    <script src="src/tabs/tabs.module.js"></script>
+    <script src="src/onBoarding/onBoarding.module.js"></script>
+    <script src="src/home/home.module.js"></script>
+    <script src="src/translator/translator.module.js"></script>
+    <script src="src/academy/academy.module.js"></script>
+    <script src="src/settings/settings.module.js"></script>
+    <script src="src/translator/sign-translator/sign-translator.module.js"></script>
+      
+    <!--- CONTROLLERS -->
+    <script src="src/tabs/tabsctrl.controller.js"></script>
+    <script src="src/onBoarding/onBoardingctrl.controller.js"></script>
+    <script src="src/home/homectrl.controller.js"></script>
+    <script src="src/translator/translatorctrl.controller.js"></script>
+    <script src="src/academy/academyctrl.controller.js"></script>
+    <script src="src/settings/settingsctrl.controller.js"></script>
+    <script src="src/translator/sign-translator/sign-translatorctrl.controller.js"></script>
+    
+    <script type="text/javascript" src="lib/webicon/angular-webicon.min.js"></script>
+    <script src="lib/intro.js/intro.js"></script> 
+    <script src="lib/angular-intro.js/src/angular-intro.js"></script>
+    <!-- Only required for Tab projects w/ pages in multiple tabs 
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+  </body>
+</html>
