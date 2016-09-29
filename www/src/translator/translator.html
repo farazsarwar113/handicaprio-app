@@ -1,26 +1,42 @@
 <ion-view view-title="Translator" id="translator-view">
-    <ion-content class="padding">
-  <!--       <div class="list list1">
-          <form id="translator-form6">
-                <label class="item item-input">
-                    <input type="search" placeholder="Type Words">
-                    <button class="button-clear"><i class="icon ion-search" style="font-size: 16px"></i></button>
-                </label>  
-          </form>
-        </div>    -->
-       <div class="list card padding card-category">
-           
+    <ion-content class="">
+        <div class="list card translator-card">
+            <div class=" item ">
+                <div class="row">
+                    <div class="col col-28">
+                    </div>
+                    <div class="col col-42 ">
+                        <img class="header-img" src="img/monitor1.png"  >
+                        <h3>TRANSLATOR</h3>
+                    </div>
+                    <div class="col col-30">
+                    </div>
+                </div>
+                
+            </div>  
+        </div>
+        <div class="padding">
             <div class="list card card-kid-category" ui-sref="tabs.signTranslator">
                 <div class=" item item-image">
                     <img src="img/td5ADE9qSwSRyP0SkbNL_6036141_orig.jpg" width="100%" height="205px" >
                 </div>
-                <ion-footer-bar class="bar-assertive home-footer-bar " ui-sref="tabs.signTranslator">Sign Language for Kids</ion-footer-bar>
+                <ion-footer-bar class="bar-default home-footer-bar " ui-sref="tabs.signTranslator">
+                    <h1 class="title title1">Sign Language for Kids</h1>
+                    <div class="buttons" ng-click="doSomething()">
+                        <i style="margin-top:6px;" class="ion-chevron-right" data-pack="default" data-tags="arrow, down"></i>
+                    </div> 
+                </ion-footer-bar>
             </div>
             <div class="list card card-adult-category"  ui-sref="tabs.signTranslator">
                 <div class=" item item-image">
                     <img src="img/JD3S9TcTQUOLoJr8SiYj_Deaf_disability_awareness.JPG" width="100%" height="auto" >
                 </div>
-                <ion-footer-bar class="bar-assertive home-footer-bar "  ui-sref="tabs.signTranslator">Sign Language</ion-footer-bar>
+                <ion-footer-bar class="bar-default home-footer-bar "  ui-sref="tabs.signTranslator">
+                    <h1 class="title title1">Sign Language</h1>
+                    <div class="buttons">
+                        <i style="margin-top:6px;" class="ion-chevron-right" data-pack="default" data-tags="arrow, down"></i>
+                    </div>
+                </ion-footer-bar>
             </div>
         </div>
     </ion-content>

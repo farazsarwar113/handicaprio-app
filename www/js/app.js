@@ -18,6 +18,7 @@ angular.module('app', ['ionic',
                        'app.academy',
                        'app.settings',
                        'app.signTranslator',
+                       'app.signin'
                        ])
 
 .run(function($ionicPlatform) {
@@ -34,7 +35,19 @@ angular.module('app', ['ionic',
     }
   });
 })
-.constant('SERVER_PATH',"http://localhost:3000")
+//.constant('SERVER_PATH',"http://localhost:3000")
+.constant('SERVER_PATH',"http://192.168.1.100:3000")
 .config(['RestangularProvider','SERVER_PATH', function (RestangularProvider, SERVER_PATH) {
     RestangularProvider.setBaseUrl(SERVER_PATH+'/api');
   }])
+
+.config(['$ionicConfigProvider', function($ionicConfigProvider) {
+
+    $ionicConfigProvider.tabs.position('bottom'); // other values: top
+
+}])
+.config(function($sceProvider) {
+  // Completely disable SCE.  For demonstration purposes only!
+  // Do not use in new projects.
+  $sceProvider.enabled(false);
+});

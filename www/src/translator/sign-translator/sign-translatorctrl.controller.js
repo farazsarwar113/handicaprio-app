@@ -13,7 +13,6 @@
     vm.showVideo = false;
 
     vm.goTo = goTo;
-    // vm.show = show;
     vm.closeVideo = closeVideo;
     vm.ok = ok;
     
@@ -37,6 +36,15 @@
         }
         vm.tokens = res.data.tokens;
         vm.pos = res.data.pos;
+        vm.videos = [];
+        for(var i=0; i< vm.tokens.length; i++){
+          console.log(vm.tokens[i]);
+          
+          vm.videos.push('https://s3-eu-west-1.amazonaws.com/handicaprio/videos/'+vm.tokens[i]+'.mp4');
+
+        }
+        vm.showVideo = true;
+        console.log(vm.videos);
 
       },function(err){
         console.log(err);

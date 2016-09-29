@@ -279,7 +279,7 @@ a.video span {
     height: 468px;
 }
 #home-view .news-card .item-avatar img{
-        position: absolute;
+    position: absolute;
     top: 16px;
     left: 3px;
     max-width: 40px;
@@ -301,6 +301,15 @@ a.video span {
 #translator-view .home-footer-bar{
     margin-bottom: -1px;
     padding: 10px;
+    background-color: rgba(255, 255, 255, 0.79) !important;
+    
+}
+#translator-view .home-footer-bar .title{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+#translator-view .home-footer-bar .title{
+   
 }
 #translator-view .card-category .list:last-child.card{
     margin-bottom: 0px;
@@ -335,4 +344,63 @@ a.video span {
 }
 #academy-modal-view .video-card{
     margin: 0px !important;
+}
+#home-view .home-icon{
+  font-size: 150px;
+}
+#home-view .img-home{
+  width: 75%;
+  margin-top: 15px;
+}
+#home-view .col {
+  
+}
+#home-view a h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  margin-top: 0px;
+
+}
+#home-view a{
+  text-decoration: none;
+
+}
+#home-view .col {
+  text-align: center;
+}
+#home-view .col1 , #home-view .col2{
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+#home-view .col2 , #home-view .col3{
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+#home-view .col-r1 , #home-view .col-r2{
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+#home-view .col-r2 , #home-view .col-r3{
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+#academy-view .academy-card, #translator-view .translator-card{
+  margin: 0px !important;
+  background: url('../img/pattern.png') center;
+}
+#academy-view .academy-card h3 , #translator-view .translator-card h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+}
+#academy-view .header-img , #translator-view .header-img{
+  border-radius: 50%;
+}
+.button.button-fab.button-fab-bottom-right{
+  bottom: 60px !important;
+}
+#academy-view p {
+   font-family: 'Montserrat', sans-serif;
 }

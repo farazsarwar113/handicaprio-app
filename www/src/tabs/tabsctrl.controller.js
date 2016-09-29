@@ -11,6 +11,8 @@
     var vm = this;
 
     vm.goToPage = goToPage;
+    vm.currentPath = $state.current.name;
+    console.log(vm.currentPath);
 
     function goToPage($event,state) {
       $event.stopPropagation();

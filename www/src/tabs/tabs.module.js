@@ -17,17 +17,18 @@
     controller: 'onBoardingCtrl as vm'
   })
 
-  .state('tabs.home', {
+  .state('home', {
     url: '/home',
-    views: {
-      'home-view': {
-        templateUrl: 'src/home/home.html',
-        controller: 'homeCtrl as vm'
-      },
-      'side-menu':{
-          templateUrl: 'src/sidemenu/sidemenu.html'
-      }
-    }
+    templateUrl: 'src/home/home_page.html',
+    controller: 'homeCtrl as vm'
+    
+  })
+
+  .state('signin', {
+    url: '/signin',
+    templateUrl: 'src/signin/signin.html',
+    controller: 'signInCtrl as vm'
+    
   })
 
   .state('tabs.academy', {
@@ -36,7 +37,15 @@
       'academy-view': {
         templateUrl: 'src/academy/academy.html',
         controller: 'academyCtrl as vm'
-      }
+      },
+      'fabContent': {
+                template: '<button id="fab-profile" class="button button-fab button-fab-bottom-right button-assertive"><i class="icon ion-search"></i></button>',
+                controller: function ($timeout) {
+                    /*$timeout(function () {
+                        document.getElementById('fab-profile').classList.toggle('on');
+                    }, 800);*/
+                }
+            }
     }
   })
 

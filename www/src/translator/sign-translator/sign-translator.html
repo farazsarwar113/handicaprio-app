@@ -1,12 +1,17 @@
 <ion-view view-title="Sign Translator" id="translator-view">
+   <ion-nav-bar class="bar-positive" align-title="center">
+        <ion-nav-buttons side="left">
+          <button class="button back-button buttons button-clear header-item" ng-click="vm.goTo($event)">
+            <i class="icon ion-ios-arrow-back"></i>
+          </button>
+        </ion-nav-buttons>
+
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right" >
+          </ion-nav-buttons>
+    </ion-nav-bar>
    
-   <ion-nav-buttons side="left">
-    <button class="button back-button buttons button-clear header-item" ng-click="vm.goTo($event)">
-      <i class="icon ion-ios-arrow-back"></i>
-    </button>
-  </ion-nav-buttons>
-   
-    <ion-content class="padding">
+    <ion-content class="padding has-header">
       <div class="list card padding card-category">
            <div class="item item-body ">
                 <p id="academy-markdown16" style="margin-top:-10px;color:#000000;font-size:13px;" class=" ">
@@ -39,8 +44,8 @@
                 <button class="button-clear video-close-btn" on-tap="vm.closeVideo($event)"><i class="icon ion-close"></i></button>
                 <div class="list card video-card" >
                     <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="academy-video8" class=" ">
-                        <video controls allowfullscreen="" width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <source src="img/Learn-American-Sign-Language-(ASL)-Lesson-1.mp4">
+                        <video controls autoplay="true" allowfullscreen="" width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;" ng-repeat="video in vm.videos">
+                            <source ng-src="{{video}}">
                         </video>
                     </div>
                 </div>

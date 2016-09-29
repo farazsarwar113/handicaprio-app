@@ -1,0 +1,27 @@
+<ion-view view-title="Sign-In"  style="background: url(img/pattern.png) no-repeat center;background-size:cover;">
+   <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <div class="spacer" style="width: 300px; height: 76px;"></div>
+        <div class="">
+            <img src="img/2FGYrwzySduVAQA1XfYS_LogoMakr.png" width="38%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <h1 id="onBoarding-heading1" style="color:#FFFFFF;text-align:center;" class=" logoHeading">HANDICAPRIO</h1>
+    <div class="list">
+      <label class="item item-input" style="border: 1px solid #fff">
+        <span style="color:#fff" class="input-label">Username</span>
+        <input style="color:#fff" type="text" ng-model="user.username">
+      </label>
+      <label class="item item-input" style="border: 1px solid #fff">
+        <span style="color:#fff" class="input-label">Password</span>
+        <input style="color:#fff" type="password" ng-model="user.password">
+      </label>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="vm.signIn()">
+        Sign-In
+      </button>
+      <p class="text-center">
+        <a href="#/forgot-password">Forgot password</a>
+      </p>
+    </div>
+  </ion-content>
+</ion-view>

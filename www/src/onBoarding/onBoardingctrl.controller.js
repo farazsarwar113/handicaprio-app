@@ -14,7 +14,7 @@
 
     function goToItemPage($event) {
       $event.stopPropagation();
-      $state.go("tabs.home");
+      $state.go("home");
     }
   }
 }());
