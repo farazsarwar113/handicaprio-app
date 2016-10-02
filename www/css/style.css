@@ -384,18 +384,18 @@ a.video span {
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
 }
-#academy-view .academy-card, #translator-view .translator-card{
+#academy-view .academy-card, #translator-view .translator-card, #news-view .news-card{
   margin: 0px !important;
   background: url('../img/pattern.png') center;
 }
-#academy-view .academy-card h3 , #translator-view .translator-card h3{
+#academy-view .academy-card h3 , #translator-view .translator-card h3, #news-view .news-card h3{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3em;
   color: #fff;
   text-align: center;
   margin-top: 5px;
 }
-#academy-view .header-img , #translator-view .header-img{
+#academy-view .header-img , #translator-view .header-img, #news-view .header-img{
   border-radius: 50%;
 }
 .button.button-fab.button-fab-bottom-right{
@@ -403,4 +403,58 @@ a.video span {
 }
 #academy-view p {
    font-family: 'Montserrat', sans-serif;
+}
+#news-view span {
+  color: #fff;
+  font-size: 1.9em;
+}
+#news-view .news-card-1 {
+  margin: 0px !important;
+  background: url('../img/motion1.jpg') center center;
+}
+
+#news-view .news-card-2 {
+  margin: 0px !important;
+  background: url('../img/news3.jpg')center center no-repeat;
+}
+
+#news-view .news-card-3 {
+  margin: 0px !important;
+  background: url('../img/news2.png') no-repeat;
+}
+
+#news-view .news-card-4 {
+  margin: 0px !important;
+  background: url('../img/new4.jpg') ;
+}
+#news-view .row-nopadding{
+  padding: 0px !important;
+}
+#news-view .card-col{
+  background-color: rgba(250,250,250,0.92);
+}
+#news-view .card-category {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: #7d7a7a;
+}
+
+#news-view .card-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+}
+#news-view .card-para {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+}
+#news-view .card-icon {
+  font-size: 1.5em;
+  color: #e42112;
+  margin-right: 15px;
+}
+#news-view .card-icon span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.0em;
+  margin-left: 5px;
+  color: #e42112;
 }

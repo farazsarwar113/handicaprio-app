@@ -7,11 +7,20 @@
     .controller('homeCtrl', homeCtrl);
 
   /* @ngInject */
-  function homeCtrl( $state,$scope,$timeout) {
+  function homeCtrl( $state,$scope,$timeout,ionicMaterialMotion,ionicMaterialInk) {
     var vm = this;
 
     vm.goToItemPage = goToItemPage;
-      
+
+    vm.isExpanded = true;
+
+    //ionicMaterialMotion.ripple();
+
+    // ionicMaterialMotion.fadeSlideInRight({
+    //   selector: '.animate-fade-slide-in .row'
+    // });
+    ionicMaterialInk.displayEffect();
+
     
   /*  $scope.CompletedEvent = function (scope) {
         console.log("Completed Event called");

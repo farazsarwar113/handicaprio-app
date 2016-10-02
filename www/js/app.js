@@ -18,7 +18,8 @@ angular.module('app', ['ionic',
                        'app.academy',
                        'app.settings',
                        'app.signTranslator',
-                       'app.signin'
+                       'app.signin',
+                       'app.news'
                        ])
 
 .run(function($ionicPlatform) {
@@ -36,7 +37,7 @@ angular.module('app', ['ionic',
   });
 })
 //.constant('SERVER_PATH',"http://localhost:3000")
-.constant('SERVER_PATH',"http://192.168.1.100:3000")
+.constant('SERVER_PATH',"http://192.168.137.138:3000")
 .config(['RestangularProvider','SERVER_PATH', function (RestangularProvider, SERVER_PATH) {
     RestangularProvider.setBaseUrl(SERVER_PATH+'/api');
   }])

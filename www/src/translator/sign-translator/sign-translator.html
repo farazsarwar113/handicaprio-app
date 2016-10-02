@@ -11,7 +11,7 @@
           </ion-nav-buttons>
     </ion-nav-bar>
    
-    <ion-content class="padding has-header">
+    <ion-content class="has-header">
       <div class="list card padding card-category">
            <div class="item item-body ">
                 <p id="academy-markdown16" style="margin-top:-10px;color:#000000;font-size:13px;" class=" ">
@@ -34,22 +34,23 @@
               <p ng-show="vm.pos">Parts of Speach Tagging:
               <p ng-show="vm.pos" class="text-wrap"> {{vm.pos}} </p>
 
-              <div ng-show="vm.warnings" style="border: 1px solid yellow"> 
+              <div ng-show="warning.reason" style="border: 1px solid yellow" ng-repeat="warning in vm.warnings"> 
                 <p class="text-wrap" style ="padding: 8px;"><span style="font-size: 14px; color: orange"><strong>Warning!</strong></span></p>
-                <p ng-repeat="warning in vm.warnings" style="font-size: 13px; padding: 8px;">{{warning.reason}}</p>
+                <p  style="font-size: 13px; padding: 8px;">{{warning.reason}}</p>
               </div>
 
             </div>
-            <div ng-if="vm.showVideo == true">
+            
+        </div>
+        <div ng-if="vm.showVideo == true">
                 <button class="button-clear video-close-btn" on-tap="vm.closeVideo($event)"><i class="icon ion-close"></i></button>
                 <div class="list card video-card" >
                     <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="academy-video8" class=" ">
-                        <video controls autoplay="true" allowfullscreen="" width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;" ng-repeat="video in vm.videos">
-                            <source ng-src="{{video}}">
+                        <video id="myvideo" controls autoplay="true" allowfullscreen="" width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;" ng-repeat="video in vm.videos">
+                            <source class="active" ng-src="{{video}}">
                         </video>
                     </div>
                 </div>
             </div>
-        </div>
     </ion-content>
 </ion-view>

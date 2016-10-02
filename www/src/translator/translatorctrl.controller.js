@@ -7,7 +7,7 @@
     .controller('translatorCtrl', translatorCtrl);
 
   /* @ngInject */
-  function translatorCtrl( $state) {
+  function translatorCtrl( $state, ionicMaterialInk) {
     var vm = this;
 
     vm.goToItemPage = goToItemPage;
@@ -16,5 +16,6 @@
       $event.stopPropagation();
       $state.go("main.itempage1");
     }
+    ionicMaterialInk.displayEffect();
   }
 }());

@@ -31,6 +31,13 @@
     
   })
 
+  .state('news', {
+    url: '/news',
+    templateUrl: 'src/news/news.html',
+    controller: 'newsCtrl as vm'
+    
+  })
+
   .state('tabs.academy', {
     url: '/academy',
     views: {
